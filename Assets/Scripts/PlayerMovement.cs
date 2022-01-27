@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
         horizontalMove = Input.GetAxisRaw("Horizontal");
     }
 
+    // Updated is called a fixed number of times per second
     void FixedUpdate()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, false);
